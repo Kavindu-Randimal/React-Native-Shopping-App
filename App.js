@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from "expo-status-bar";
+// import { StyleSheet, Text, View } from "react-native";
 
-export default function App() {
+// import LoginScreen from "./app/screens/loginscreen/LoginScreen";
+// import MainController from "./app/screens/MainController";
+
+// import ProductsScreen from "./app/screens/productsscreen/ProductsScreen";
+// import DetailsScreen from "./app/screens/detialscreen/DetailScreen";
+// import CartScreen from "./app/screens/cartscreen/CartScreen";
+import Navigation from "./app/components/navigation/NavigationScreen";
+import { AuthProvider } from "./app/context/AuthContext";
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <AuthProvider>
+        <Navigation />
+      </AuthProvider>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

@@ -2,20 +2,22 @@ import React from "react";
 import { Text, StyleSheet, View, Image } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import iphonexs from "../../../../app/assets/iphonexs.jpeg";
-import Slider from "@react-native-community/slider";
 
-// export default function DetailsScreen({navigation})
 function CartScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <ScrollView>
-        {/* <View> */}
         <View style={styles.rowText}>
           <Image style={styles.productImage} source={iphonexs}></Image>
-          <Text style={styles.title}>iPhone 9</Text>
-          <Text style={styles.feedback}>100$</Text>
+          <View style={styles.rowText}>
+            <Text style={styles.title}>iPhone 9</Text>
+            <Text style={styles.price}>100$</Text>
+          </View>
+          <View style={styles.delete}>
+            <Text>100$</Text>
+            <Text>100$</Text>
+          </View>
         </View>
-        {/* </View> */}
       </ScrollView>
     </View>
   );
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: "15%",
     fontSize: 18,
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontFamily: "American Typewriter",
     paddingLeft: "8%",
     fontWeight: "bold",
   },
@@ -40,19 +42,17 @@ const styles = StyleSheet.create({
   price: {
     marginTop: "15%",
     fontSize: 22,
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontFamily: "American Typewriter",
     paddingLeft: "10%",
     paddingRight: "10%",
   },
+  quantity: {},
 
-  feedback: {
-    marginTop: "15%",
-    fontSize: 22,
-    fontFamily: "Bodoni 72 Oldstyle",
-    paddingLeft: "10%",
-    // paddingRight: "10%",
+  delete: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
   },
-
   productImage: {
     flex: 1,
     height: 100,

@@ -26,9 +26,7 @@ function ProductsScreen({ navigation }) {
         data.map((post) => (
           <View>
             <Text style={styles.title}>{post.title}</Text>
-            <Text style={styles.description}>
-              An apple mobile which is nothing like apple
-            </Text>
+            <Text style={styles.description}>{post.description}</Text>
             <Image style={styles.productImage} source={post.image}></Image>
           </View>
         ))
@@ -47,14 +45,14 @@ const styles = StyleSheet.create({
   title: {
     marginTop: "10%",
     fontSize: 25,
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontFamily: "American Typewriter",
     paddingLeft: "5%",
   },
 
   description: {
     marginTop: "1%",
     fontSize: 18,
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontFamily: "American Typewriter",
     paddingLeft: "5%",
   },
 

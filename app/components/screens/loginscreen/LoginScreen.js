@@ -7,7 +7,7 @@ import CustomInput from "../../custominput/CustomInput";
 import CustomButton from "../../custombutton/CustomButton";
 import { AuthContext } from "../../../context/AuthContext";
 
-function loginScreen(navigation) {
+function LoginScreen(navigation) {
   const [username, setUserName] = useState(null);
   const [password, setPassword] = useState(null);
 
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 40,
     fontWeight: "bold",
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontFamily: "American Typewriter",
     marginVertical: "30%",
   },
 });
-export default loginScreen;
+export default LoginScreen;

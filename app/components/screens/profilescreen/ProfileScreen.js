@@ -122,20 +122,20 @@ const styles = StyleSheet.create({
     padding: "3%",
   },
   text: {
-    marginTop: "3%",
-    fontSize: 20,
-    fontFamily: "Bodoni 72 Oldstyle",
+    marginTop: "4%",
+    fontSize: 16,
+    fontFamily: "American Typewriter",
     fontWeight: "bold",
   },
   boldText: {
-    marginTop: "3%",
-    fontSize: 20,
-    fontFamily: "Bodoni 72 Oldstyle",
+    marginTop: "4%",
+    fontSize: 16,
+    fontFamily: "American Typewriter",
   },
   description: {
     marginTop: "1%",
-    fontSize: 18,
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontSize: 14,
+    fontFamily: "American Typewriter",
     paddingLeft: "5%",
   },
 
@@ -158,8 +158,8 @@ const styles = StyleSheet.create({
 
   feedback: {
     marginTop: 20,
-    fontSize: 22,
-    fontFamily: "Bodoni 72 Oldstyle",
+    fontSize: 18,
+    fontFamily: "American Typewriter",
     paddingLeft: "1%",
     paddingRight: "10%",
   },
